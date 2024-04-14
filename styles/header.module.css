@@ -1,0 +1,19 @@
+.head{
+background-color: rgba(0, 0, 0, 0.471);
+color: aliceblue;
+text-align: center;
+padding: 20px;
+border-radius: 20px;
+}
+.input{
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+font-size: larger;
+color: rgb(31, 253, 87);
+}
+.input:active{
+    background-color: rgb(228, 238, 235);
+    border: 3px;
+
+}

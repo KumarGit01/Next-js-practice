@@ -1,0 +1,8 @@
+{
+    "products":[
+{"id":1,"title":"kumar","price":7000},
+{"id":2,"title":"raj","price":8000},
+{"id":3,"title":"s","price":6000}
+
+    ]
+}
