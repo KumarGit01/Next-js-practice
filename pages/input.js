@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import style from '../styles/header.module.css';
-import styles from '../../hell/styles/Home.module.css';
+import styles from '../styles/Home.module.css';
+
 import Footer from '../components/Footer';
 import { signIn, useSession } from 'next-auth/react';
 

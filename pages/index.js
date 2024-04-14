@@ -1,6 +1,6 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import style from '../../hell/styles/Home.module.css';
+import style from '../styles/Home.module.css';
 import { useSession } from 'next-auth/react';
 
 export default function Home() {

@@ -1,5 +1,4 @@
 import { getSession } from "next-auth/react";
-import { redirect } from "next/dist/server/api-utils";
 
 function About({ data }) {
   return <div className='layout-About'>About {data}</div>; 
