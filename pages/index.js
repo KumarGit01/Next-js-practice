@@ -9,21 +9,17 @@ export default function Home() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch('http://localhost:3000/api/data');
+      const res = await fetch('https://next-js-practice-mu-one.vercel.app/api/data');
       const { peopleData } = await res.json();
       setData(peopleData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
-
-  useEffect(() => {
-    fetchData();
-  }, []); // Fetch data on initial render
-
+  
   const handleDelete = async (id) => {
     try {
-      const response = await fetch('http://localhost:3000/api/data', {
+      const response = await fetch('https://next-js-practice-mu-one.vercel.app/api/data', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -37,7 +33,7 @@ export default function Home() {
       console.error('Error deleting data:', error);
     }
   };
-
+  
   return (
     <>
       {session && <h1>Welcome {session.user.name} gg</h1>}

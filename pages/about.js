@@ -12,7 +12,7 @@ console.log(session)
 if(!session){
     return{
         redirect:{
-            destination:'/api/auth/signin?callbackurl=http://localhost:3000/about',
+            destination:'/api/auth/signin?callbackurl=https://next-js-practice-mu-one.vercel.app/',
             permanent : false,
         },
     }

@@ -32,7 +32,7 @@ console.log(status)
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/data', {
+      const response = await fetch('https://next-js-practice-mu-one.vercel.app/api/data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -41,6 +41,7 @@ console.log(status)
       });
       const data = await response.json();
       console.log(data);
+      alert(data)
     } catch (error) {
       console.error('Error submitting data:', error);
     }
